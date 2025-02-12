@@ -2188,14 +2188,20 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
-			overflow: hidden;
+			border-radius: 0; /* 去掉圆框 */
+			overflow: visible; /* 确保图片不被裁剪 */
+			display: flex; /* 使用 flex 布局 */
+			justify-content: center; /* 水平居中 */
+			align-items: center; /* 垂直居中 */
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 0;
 				display: block;
-				width: 100%;
+				/* width: 300px;
+				height: 225px; */
+				width: 180px; /* 确保图片宽度自适应 */
+				height: 150px; /* 确保图片高度自适应 */
 			}
 
 		.image.main {
